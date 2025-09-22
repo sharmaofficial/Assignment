@@ -21,16 +21,21 @@ export const useStyle = () => {
       shadowRadius: 4,
       elevation: 1,
     },
-    photo: { 
-        width: verticalScale(64), 
-        height: verticalScale(64), 
-        borderRadius: verticalScale(32) 
+    photo: {
+      width: verticalScale(64),
+      height: verticalScale(64),
+      borderRadius: 32,
     },
     info: { flex: 1, marginLeft: moderateScale(12) },
     name: { fontSize: scale(16), fontWeight: '600' },
-    spec: { fontSize: scale(13), color: '#444', marginTop: 2 },
-    statusWrap: { alignItems: 'center', width: verticalScale(80) },
-    statusDot: { width: verticalScale(12), height: verticalScale(12), borderRadius: 6, marginBottom: moderateScale(6) },
+    spec: { fontSize: scale(13), color: '#444', marginTop: moderateScale(2) },
+    statusWrap: { alignItems: 'center', width: 80 },
+    statusDot: {
+      width: verticalScale(12),
+      height: verticalScale(12),
+      borderRadius: 6,
+      marginBottom: moderateScale(6),
+    },
     statusText: { fontSize: scale(12), color: '#333' },
   });
 
